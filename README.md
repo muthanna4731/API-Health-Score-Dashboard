@@ -39,8 +39,7 @@ It monitors latency, uptime, and error trends to generate a **health score**, vi
 ## System Design Highlights
 
 - **Scheduler / Ping Service:** Periodically pings all registered APIs and stores metrics.
-- **Health Score Engine:** Uses rolling averages and weight<img width="1470" height="624" alt="Screenshot 2025-11-12 at 3 30 43 PM" src="https://github.com/user-attachments/assets/0d399de2-f72f-49ab-8697-5f395906f5dc" />
-ed scoring logic for real-time reliability evaluation.
+- **Health Score Engine:** Uses rolling averages and weighted scoring logic for real-time reliability evaluation.
 - **Failover Handler:** Monitors thresholds and triggers automatic rerouting to backup endpoints.
 - **Notification System:** Notifies users when health score dips below thresholds.
 - 
